@@ -15,10 +15,8 @@ use App\Http\Controllers\LeadsReportController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('leads.index');
 });
-
-Route::view('/leads', 'leads.index');
 
 
 Route::get('/report-schema', [LeadsReportController::class, 'getFields']);
